@@ -4,12 +4,7 @@ title: 关于
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+本博客基于[jekyll/minima](https://github.com/jekyll/minima)主题构建，针对fix-113分支修改了table的解析。
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+所有文章源码在[github/zengchw](https://github.com/zengchw/zengchw.github.io)，若需评论可通过提交
+[issues](https://github.com/zengchw/zengchw.github.io/issues)方式。
