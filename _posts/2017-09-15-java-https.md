@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "java刷票--导入cer证书 "
+title: "java导入cer证书"
 categories: java spring https
 # author: "炮灰哥"
 ---
@@ -50,11 +50,11 @@ unable to find valid certification path to requested target
 
     2. 利用jdk的toolkey工具，将证书转换成密钥的形式
 
-    ```sh
-    keytool -import -alias cacerts -file ./srca.cer \
-        -keystore srca.keystore
-    # 会提示输入keystore密码，随便输，但要记住，后面有用
-    ```
+        ```sh
+        keytool -import -alias cacerts -file ./srca.cer \
+            -keystore srca.keystore
+        # 会提示输入keystore密码，随便输，但要记住，后面有用
+        ```
 
     3. 配置httpClient、restTemplate
 
