@@ -35,19 +35,15 @@ categories: docker
 
 ### 获取镜像
 
+关于镜像，可看本人[github](https://github.com/zengchw/xx-net)
+
 ```sh
 docker pull zengchw/xx-net
 ```
 
-### 构建镜像
-
-```sh
-docker build . -t zengchw/xx-net
-```
-
 ### 运行
 
-建议映射容器卷，方便修改配置和导出证书
+建议映射数据卷，方便修改配置和导出证书，以下为参考代码。
 
 ```sh
 docker run -d --name xx-net \
@@ -66,8 +62,9 @@ docker run -d --name xx-net \
 
 ### 修改配置
 
-在容器内创建/data/xx-net/data/gae_proxy/manual.ini文件
-添加以下内容，允许指定网段访问。
+1. 在容器内创建/data/xx-net/data/gae_proxy/manual.ini文件
+
+2. 添加以下内容，允许指定网段访问。
 
 ```
 [listen]

@@ -9,16 +9,10 @@ categories: docker leanote
 
 ## 获取镜像
 
+关于镜像，可看本人[github](https://github.com/zengchw/leanote)
+
 ```sh
 docker pull zengchw/leanote
-```
-
-## 构建镜像
-
-首先克隆本仓库，在项目根目录下执行以下代码
-
-```sh
-docker build . -t zengchw/leanote
 ```
 
 ## 运行
@@ -35,7 +29,7 @@ docker run -d --name leanote \
 
 ## 修改时区
 
-进入容器内执行下面脚本，给为北京时间，其它时区自己酌情修改
+进入容器内执行下面脚本，改为北京时间，其它时区自己酌情修改
 
 ```sh
 rm -f /etc/localtime 
