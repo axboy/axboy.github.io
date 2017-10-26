@@ -9,7 +9,7 @@ layout: default
   <h1 class="page-heading">文章列表</h1>
   
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -24,3 +24,5 @@ layout: default
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 
 </div>
+
+<!-- TODO paginator code -->
