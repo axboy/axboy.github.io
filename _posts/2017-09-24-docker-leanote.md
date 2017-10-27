@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Docker部署蚂蚁笔记"
-categories: docker leanote
+title: Docker部署蚂蚁笔记
+# description: 
+categories: docker
+tags: docker
 # author: "炮灰哥"
 ---
 

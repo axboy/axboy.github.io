@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "HashMap源码分析"
-categories: java hashmap
+title: HashMap源码分析
+description: HashMap基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键。
+categories: java
+tags: java HashMap
 ---
 
 ### 概述

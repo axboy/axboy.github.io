@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Docker部署XX-Net"
+title: Docker部署XX-Net
+# description: 
 categories: docker
+tags: docker
 # author: "炮灰哥"
 ---
 
-关于XX-Net，请看[github/XX-Net](https://github.com/XX-net/XX-Net)
+[XX-Net](https://github.com/XX-net/XX-Net 'github/XX-Net')，易用的翻墙工具，包含的GAE_proxy和X-Tunnel。
 
 ### 目录
 

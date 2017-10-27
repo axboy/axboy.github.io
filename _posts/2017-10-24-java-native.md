@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "java调用native方法(mac)"
+title: java调用native方法(mac)
+description: native方法称为本地方法。在java源程序中以关键字“native”声明，不提供函数体。其实现使用C/C++语言在另外的文件中编写，编写的规则遵循Java本地接口的规范Java native Interface(简称JNI)。简而言就是Java中声明的可调用的使用C/C++实现的方法。
 categories: java
+tags: java
 ---
 
 ### 前言

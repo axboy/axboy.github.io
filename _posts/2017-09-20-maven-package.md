@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "maven打包"
-categories: java maven
+description: ""
+categories: java
+tags: java maven
 # author: "炮灰哥"
 ---
 
