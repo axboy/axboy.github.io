@@ -1,6 +1,6 @@
 ---
 layout: post
-title: java调用native方法(mac)
+title: java jni的使用(mac)
 description: native方法称为本地方法。在java源程序中以关键字“native”声明，不提供函数体。其实现使用C/C++语言在另外的文件中编写，编写的规则遵循Java本地接口的规范Java native Interface(简称JNI)。简而言就是Java中声明的可调用的使用C/C++实现的方法。
 categories: java
 tags: java
@@ -125,3 +125,29 @@ tags: java
 - [Java调用C（Linux下实现Java本地方法）](http://blog.csdn.net/kangkanglou/article/details/5807787)
 
 - [在 Windows 中实现 Java 本地方法](https://www.ibm.com/developerworks/cn/java/jnimthds/)
+
+- [Linux下JNI的使用](https://www.cnblogs.com/bastard/archive/2012/05/17/2506877.html)
+
+### 补充(Linux下使用jni 2017/12/19)
+
+    - linux下编译动态库
+
+    ```sh
+    gcc -I ${JAVA_HOME}/include -I ${JAVA_HOME}/include/linux \
+        -fPIC -shared -o libMyNative.so \
+        local_zcw_demo_MyNative.c
+    ```
+
+    - 运行(可能出现java.lang.UnsatisfiedLinkError异常)
+
+    使用
+
+    ```sh
+    java -Djava.library.path='.' local.zcw.demo.MyNative
+    ```
+
+    或添加环境变量
+
+    ```sh
+    export LD_LIBRARY_PATH="libMyNative.so路径":$LD_LIBRARY_PATH
+    ```
