@@ -50,6 +50,7 @@ docker pull zengchw/xx-net
 ```sh
 docker run -d --name xx-net \
     -p 8085-8087:8085-8087 \
+    -p 1080:1080 \
     -v `pwd`/data:/data/xx-net/data \
     zengchw/xx-net
 ```
@@ -99,6 +100,33 @@ python uploader.py "appid1|appid2" -debug
 证书错误参考[这里](https://github.com/XX-net/XX-Net/wiki/%E8%AF%81%E4%B9%A6%E9%94%99%E8%AF%AF)，把证书都删除，重启服务，重新安装证书即可。
 
 
+### 使用xx-tunnel
+
+容器内/data/xx-net/data/x_tunnel/client.json，按需求增加配置
+
+```json
+{
+  "socks_host" : "127.0.0.1",
+  "socks_port" : 1080,
+  "server_host": "1234.xx-net.net",
+  "server_port": 443,
+  "login_account": "xxnet@github.org",
+  "login_password": "MTIzNDU2Nzg5MA"
+}
+```
+
+- 说明
+
+    socks_host 绑定监听的ip，改为0.0.0.0可向其它设备提供代理
+
+    socks_port 绑定监听的端口，默认1080
+
+    server_host,server_port 指定目标服务器
+
 ### 其它
 
-参考[wiki](https://github.com/XX-net/XX-Net/wiki)
+[xx-net wiki](https://github.com/XX-net/XX-Net/wiki)
+
+[IPv6 with Docker](https://docs.docker.com/engine/userguide/networking/default_network/ipv6/)
+
+[IPv6 in a Docker container on a non-ipv6 network](https://raymii.org/s/articles/IPv6_in_a_Docker_container_on_a_non-ipv6_network.html)
