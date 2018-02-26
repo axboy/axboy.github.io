@@ -10,7 +10,7 @@ tags: java
 
 有这样一个需求，查询印尼（+7时区）当天的订单量，心想，很容易嘛，顺手就把如下代码提交上线了，先指定时区，时分秒置0。
 
-```
+```java
 Calendar cal = Calendar.getInstance();
 cal.setTimeZone(TimeZone.getTimeZone("Asia/Pontianak"));
 cal.set(Calendar.HOUR_OF_DAY, 0);
@@ -31,5 +31,5 @@ Long fromTime = cal.getTimeInMillis();
 
 ![screen](/images/java-calendar-01.png)
 
-19-25行和上面提交的代码一样，27-34行在上面的基础上增加了第29行内容，即打印日期。
+19~25行和上面提交的代码一样，27~34行在上面的基础上增加了第29行内容，即打印日期。
 获取日期后再修改时间，结果就是我们想要的了，理论上get方法不应该对值有影响，这里api源码待进一步查看。
