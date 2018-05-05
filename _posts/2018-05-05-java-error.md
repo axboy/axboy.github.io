@@ -84,6 +84,6 @@ maven项目一般执行 _mvn clean_ 就可以了。
 
 ### 参考文章
 
-- [java.lang.NoSuchFieldError - How to solve SuchFieldError | Examples Java Code Geeks - 2018](https://examples.javacodegeeks.com/java-basics/exceptions/java-lang-nosuchfielderror-how-to-solve-suchfielderror/)
+- [How to solve SuchFieldError (Examples Java Code Geeks - 2018)](https://examples.javacodegeeks.com/java-basics/exceptions/java-lang-nosuchfielderror-how-to-solve-suchfielderror/)
 
 - [NoSuchFieldError (Java Platform SE 7 )](https://docs.oracle.com/javase/7/docs/api/java/lang/NoSuchFieldError.html)
