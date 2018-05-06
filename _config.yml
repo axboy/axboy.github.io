@@ -119,8 +119,8 @@ menu:
   archives: /archives/
   categories: /categories/
   tags: /tags/
-  about: /other/about/
   donate: /other/donate/
+  about: /other/about/
   #search: /search.xml
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -559,7 +559,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: false
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: manual
