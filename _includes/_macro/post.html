@@ -27,8 +27,6 @@
       <header class="post-header">
 
         {% comment %} % Not to show title for quote posts that do not have a title {% endcomment %}
-
-        <!-- 首页列表解析 -->
         {% unless is_index and post.type == 'quote' and post.title == nil %}
           <{% if site.seo %}h2{% else %}h1{% endif %} class="post-title" itemprop="name headline">
           {% comment %} Link posts {% endcomment %}
@@ -109,7 +107,7 @@
                 </span>
 
                 {% assign cat_length = post.categories.size %}
-                {% if cat_length > 1 and loop.index != cat_length %}
+                {% if cat_length > 1 and forloop.index != cat_length %}
                   {{ __.symbol.comma }}
                 {% endif %}
               {% endfor %}

@@ -5,11 +5,9 @@
 
 # Site
 title: 学习笔记
-subtitle:
-description: > # 苟国家生死以,岂因福祸趋之。
-  既来之，则安之。
-author: 潭口老表
-# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-cn, zh-hk, zh-tw
+subtitle: 学而不思则罔，思而不学则殆。
+description: 既来之，则安之。
+author: axboy
 language: zh-cn
 date_format: '%Y-%m-%d'
 
@@ -19,18 +17,18 @@ url:
 baseurl:
 permalink: pretty
 
-# Pagination
+# 分页配置
 paginate: 10
-#paginate_path: "/page:num/"
-#archive:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#category:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#tag:
-  #paginate: 10
-  #paginate_path: "/page:num/"
+paginate_path: "/page:num/"
+archive:
+  paginate: 1000
+  paginate_path: "/page:num/"
+category:
+  paginate: 1000
+  paginate_path: "/page:num/"
+tag:
+  paginate: 1000
+  paginate_path: "/page:num/"
 
 # Handling Reading
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md"]
@@ -84,7 +82,7 @@ keywords: "Jekyll, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-# rss:
+rss: false
 
 # Specify the date when the site was setup
 #since: 2015
@@ -118,10 +116,12 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
   archives: /archives/
+  categories: /categories/
   tags: /tags/
+  about: /other/about/
+  donate: /other/donate/
+  #search: /search.xml
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -142,17 +142,11 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  donate: dollar
 
-
-
-
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-# Schemes
-scheme: Muse
-#scheme: Mist
+#### 主题配置
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -226,13 +220,14 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: zengchw
+  GitHub: github
   # Twitter: twitter
   Weibo: weibo
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
+#avatar:
 avatar: /images/avatar-dog.jpg
 
 
@@ -286,11 +281,11 @@ sidebar:
 #links_layout: inline
 #links:
   #Title: http://example.com/
+
 links_title: Links
 links:
-  GitHub: https://github.com/zengchw
+  GitHub: https://github.com/axboy/
   般若: https://btpka3.gitbooks.io/btpka3/
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -376,8 +371,8 @@ han: false
 # Swiftype Search API Key
 #swiftype_key:
 
-# Baidu Analytics ID
-#baidu_analytics:
+# 百度统计
+baidu_analytics: affdcc846dc488b83e30ede10e1d1abe
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -410,6 +405,15 @@ changyan:
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
+
+# Support for gitalk comments system.
+gitalk:
+  enable: false
+  clientID: # 54730ddf7b9420460c03
+  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
+  repo: # colingpt.github.io
+  owner: # colingpt
+  admin: # colingpt
 
 # Baidu Share
 # Available value:
@@ -500,7 +504,7 @@ leancloud_visitors:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -555,12 +559,12 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
-  trigger: auto
+  trigger: manual
   # show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
+  top_n_per_article: 5
 
 # External URL with BASE64 encrypt & decrypt
 # Usage: {% exturl text url "title" %}

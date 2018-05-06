@@ -3,6 +3,11 @@ title:
   category: 分类
   tag: 标签
   schedule: 日程表
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  donate: 打赏
 
 author: 博主
 
@@ -16,6 +21,7 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益404
+  donate: 打赏
 
 sidebar:
   overview: 站点概览

@@ -3,6 +3,11 @@ title:
   category: Category
   tag: Tag
   schedule: Schedule
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  donate: Donate
 
 author: Author
 
@@ -16,6 +21,7 @@ menu:
   schedule: Schedule
   sitemap: Sitemap
   commonweal: Commonweal 404
+  donate: Donate
 
 sidebar:
   overview: Overview
