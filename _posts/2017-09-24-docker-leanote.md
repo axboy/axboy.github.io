@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Docker部署蚂蚁笔记
-# description: 
+description: 知识管理, 博客, 分享, 协作... 尽在Leanote
 categories: docker
 tags: docker
-# author: "炮灰哥"
 ---
 
 关于蚂蚁笔记，请看[官网](https://leanote.com/ '官网')，本镜像基于mongo:3.2构建，实际就是添加一个run.sh脚本，初始化蚂蚁笔记的所需的数据库。

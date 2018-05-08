@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "java导入cer证书"
-description: ""
+description: "RestTemplate使用证书访问网站"
 categories: java
 tags: java spring
-# author: "炮灰哥"
 ---
 
 ### 前言

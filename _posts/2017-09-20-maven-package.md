@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "maven打包"
+title: "maven打包踩坑记录"
 description: ""
 categories: java
 tags: java maven
-# author: "炮灰哥"
 ---
 
 ### 前言
