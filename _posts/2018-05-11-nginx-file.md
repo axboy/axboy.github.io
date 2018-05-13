@@ -84,7 +84,7 @@ server {
 
 - location优先级说明
 
-在nginx的location和配置中location的顺序没有太大关系。与location表达式的类型有关。相同类型的表达式，字符串长的会优先匹配。
+    在nginx的location和配置中location的顺序没有太大关系。与location表达式的类型有关。相同类型的表达式，字符串长的会优先匹配。
 
 - 优先级顺序
 
