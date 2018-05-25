@@ -6,6 +6,7 @@
 + 感谢[Jekyll](https://jekyllrb.com/)团队做出如此优秀的产品
 + 感谢[Simpleyyt](https://github.com/simpleyyt/jekyll-theme-next)提供如此简便的模板
 + 感谢[不蒜子](http://busuanzi.ibruce.info/)提供网页计数功能
++ 感谢[easyicon](https://www.easyicon.net/)提供网站图标
 
 ### 使用
 

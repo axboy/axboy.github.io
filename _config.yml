@@ -73,7 +73,6 @@ plugins:
 # Site Information Settings
 # ---------------------------------------------------------------
 
-# Put your favicon.ico into `assets/` directory.
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
