@@ -110,13 +110,13 @@ tags: java
 
 ### 其它
 
-项目目录如下图,代码[下载](https://github.com/zengchw/zcw.learn/tree/master/java/native-method)
+项目目录如下图,代码[下载](https://github.com/axboy/zcw.learn/tree/master/java/native-method)
 
-![project](/images/java-native-01.png)
+![project](/images/2017/java-native/project-files.png)
 
 完整的命令如下图
 
-![whole](/images/java-native-02.png)
+![whole](/images/2017/java-native/all-cmd.png)
 
 ### 参考文章
 

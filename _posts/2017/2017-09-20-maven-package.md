@@ -12,7 +12,7 @@ tags: java maven
 
 项目目录如下图
 
-![project](/images/maven-package-01.png)
+![project](/images/2017/maven-package/project-files.png)
 
 在maven项目中，我们的项目依赖都是取自本地或远程仓库，比如如下配置
 
@@ -102,7 +102,7 @@ tags: java maven
 
 将jar解压出来如下图
 
-![jar](/images/maven-package-02.png)
+![target](/images/2017/maven-package/target-files.png)
 
 ### 其它
 
