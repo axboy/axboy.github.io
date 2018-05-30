@@ -102,36 +102,35 @@ void loop() {
 #### 示例代码，自动滚屏
 
 ```java
+//引入依赖
 #include <LiquidCrystal.h>
-const int rs = 3, en = 5, d4 = 10, d5 = 11, d6 = 12 d7 = 13;
+// 初始化针脚
+const int rs = 3, en = 5, d4 = 10, d5 = 11, d6 = 12, d7 = 13;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+char arr [9]= {'a', 'b', 'c', 'd' ,'e' ,'f' ,'g', 'h', 'i'};
 
 void setup() {
-  lcd.begin(16, 2);
+    //设置LCD要显示的列数、行数，即2行16列
+    lcd.begin(16, 2);
 }
 
 void loop() {
-
-    //在0列0行显示0~9，间隔500ms变化
+    //输出1-9,a1-9,b,1-9,c
     lcd.setCursor(0, 0);
-    for (int thisChar = 0; thisChar < 10; thisChar++) {
-        lcd.print(thisChar);
-        delay(500);
-    }
-
-    //设置自动滚屏
     lcd.autoscroll();
 
-    //在16列1行显示0~9，间隔500ms变化
-    lcd.setCursor(16, 1);
-    for (int thisChar = 0; thisChar < 10; thisChar++) {
-        lcd.print(thisChar);
+    for(int i = 0; i < 9; i++){
+      for(int j = 1; j < 10; j++){
+        lcd.print(j);
         delay(500);
+      }
+      lcd.print(arr[i]);
+      delay(500);
     }
+
     //关闭自动滚屏
     lcd.noAutoscroll();
-
-    //未下重循环清屏
+    //为下重循环清屏
     lcd.clear();
 }
 ```
