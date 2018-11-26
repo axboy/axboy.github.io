@@ -11,6 +11,7 @@
 ### 使用
 
 ```sh
+sudo gem install bundler jekyll
 git clone https://github.com/axboy/axboy.github.io.git
 cd axboy.github.io
 script/bootstrap
