@@ -5,4 +5,4 @@ _site
 *.gem
 
 .DS_Store
-。settings/
+.settings/
