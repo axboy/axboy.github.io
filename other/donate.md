@@ -28,7 +28,7 @@ header: 打赏
 <hr>
 您可以选择手机支付宝扫一扫
 
-<img src="{{ '/images/qrcode/alipay.jpg' | prepend: site.baseurl }}" alt="支付宝二维码付款给axboy" width="310" />
+<img src="{{ '/images/qrcode/alipay.png' | prepend: site.baseurl }}" alt="支付宝二维码付款给axboy" width="310" />
 
 <br>
 <br>
@@ -39,7 +39,7 @@ header: 打赏
 <hr>
 您可以选择手机微信扫一扫
 
-![微信二维码付款给Freud]({{ '/images/qrcode/wxpay.jpg' | prepend: site.baseurl }})
+![微信二维码付款给Freud]({{ '/images/qrcode/wxpay.png' | prepend: site.baseurl }})
 
 <br>
 <br>
