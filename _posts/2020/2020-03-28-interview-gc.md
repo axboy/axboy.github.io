@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 备战面试--Java垃圾回收
-description: 深入浅出讲解垃圾回收
+description: 关于垃圾回收的简单复习
 categories: java
 tags: intervirew java
 ---
